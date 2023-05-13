@@ -11,13 +11,14 @@ export default function ProdutoHome(props) {
                         <img src={tenis} alt="" className={estilo.ImagemProduto} />
                     </div>
                     <div className={estilo.TipoProduto}>
-                        Tenis
+                        
+                        {props.categoria}
                     </div>
                     <div className={estilo.NomeProduto}>
-                        K-Swiss V8 - Masculino
+                        {props.descricao}
                     </div>
                     <div className={estilo.PrecoProduto}>
-                        $100
+                       {props.valor}
                     </div>
                 </div>
             </Link>
